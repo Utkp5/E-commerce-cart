@@ -2,72 +2,8 @@ import React from "react";
 import { useState } from "react";
 import "./Product.css";
 
-function Product() {
+function Product({Products}) {
 
-  
-  const [Products, setproducts] = useState([
-    {
-      productsImg:"https://d1oco4z2z1fhwp.cloudfront.net/templates/default/4886/phone.png",
-      productsTitle:"ELECTRONICS ITEM",
-      productsInfo: "IPHONE X",
-      subproductInfo:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!",
-      productsPrice: "$196.00",
-      priceStrike: "$230.99",
-    },
-    {
-        productsImg:
-        "https://d1oco4z2z1fhwp.cloudfront.net/templates/default/4886/laptop__1_.png",
-      productsTitle:"ELECTRONICS ITEM",
-      productsInfo: "LAPTOP LINOVO",
-      subproductInfo:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!",
-      productsPrice: "$126.00",
-      priceStrike: "$230.99",
-    },
-    {
-        productsImg:
-        "https://d1oco4z2z1fhwp.cloudfront.net/templates/default/4886/camera.png",
-      productsTitle:"ELECTRONICS ITEM",
-      productsInfo: "CAMERA CANON",
-      subproductInfo:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!",
-      productsPrice: "$106.00",
-      priceStrike: "$230.99",
-    },
-    {
-        productsImg:
-        "https://d1oco4z2z1fhwp.cloudfront.net/templates/default/4886/headphones.png",
-      productsTitle:"ELECTRONICS ITEM",
-      productsInfo: "HEADPHONES BOAT",
-      subproductInfo:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!",
-      productsPrice: "$139.00",
-      priceStrike: "$230.99",
-    },
-    {
-      productsImg:
-        "https://d1oco4z2z1fhwp.cloudfront.net/templates/default/4886/iron__1_.png",
-        productsTitle:"ELECTRONICS ITEM",
-      productsInfo: "IRON",
-      subproductInfo:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!",
-        productsPrice: "$150.00",
-        priceStrike: "$230.99",
-      },
-    {
-      productsImg:
-      "https://d1oco4z2z1fhwp.cloudfront.net/templates/default/4886/washing-machines.png",
-        productsTitle:"ELECTRONICS ITEM",
-      productsInfo: "WASHING MACHINE",
-      subproductInfo:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!",
-      productsPrice: "$166.00",
-      priceStrike: "$230.99",
-    },
-  ]);
-
-  
   return (
     <div className="prdct">
     <h2 className="prdct_h2">Products</h2>
@@ -97,7 +33,7 @@ function Product() {
                 </div>
               </div>
             </div>
-            <button id="addtocart">Add to Cart</button>
+            <button id="addtocart"   onClick={() => addToCart(prdct)}>Add to Cart</button>
           </div>
           );
         })}
