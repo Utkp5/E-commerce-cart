@@ -1,0 +1,21 @@
+
+  .slider {
+      margin-top: 10px;
+  }
+  
+  .react-slideshow-container .default-nav:first-of-type 
+{
+    margin-right: -30px;
+    border-right: 0;
+    border-top: 0;
+    z-index: -1 !important;
+}
+.react-slideshow-container .default-nav:last-of-type {
+    margin-left: -30px;
+    z-index: -1 !important;
+}
+.react-slideshow-fadezoom-wrapper {
+  width: 100%;
+  overflow: hidden;
+  height: 500px !important;
+}
