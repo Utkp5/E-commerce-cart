@@ -1,0 +1,49 @@
+header
+{
+    display: flex;
+    border-bottom: 2px solid gray;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo
+{
+    width: 70px;
+}
+ul
+{
+    list-style: none;
+    display: flex;
+}
+li
+{
+    margin: 0px 30px;
+    font-size: larger;
+}
+a
+{
+    text-decoration: none;
+    color: lightslategrey;
+}
+a:hover
+{
+    border-bottom: 2px solid darkgrey;
+    transform: translateY(1px);
+}
+#sup
+{
+    position: absolute;
+}
+.react-slideshow-container .default-nav:last-of-type 
+{
+    display: none !important;
+}
+.react-slideshow-container .default-nav:first-of-type 
+{
+    display: none !important;
+}
+@media (max-width:650px) {
+    ul
+    {
+        display: none;
+    }
+}
