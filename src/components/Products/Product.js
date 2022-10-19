@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "./Product.css";
 
-function Product({Products}) {
+function Product({Products,addToCart}) {
 
   return (
     <div className="prdct">
@@ -33,7 +33,7 @@ function Product({Products}) {
                 </div>
               </div>
             </div>
-            <button id="addtocart"   onClick={() => addToCart(prdct)}>Add to Cart</button>
+            <button id="addtocart" onClick={() => addToCart(prdct)}>Add to Cart</button>
           </div>
           );
         })}

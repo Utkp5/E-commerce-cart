@@ -71,9 +71,9 @@ function Home() {
 
 
   const [cart,setcart] = useState([])
-
+  console.log(cart);
   const addToCart = (data) =>{
-    console.log(data);
+    setcart([...cart,data])
   }
 
   return (
