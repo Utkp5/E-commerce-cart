@@ -26,6 +26,7 @@ function Cart({ cart }) {
                         return (
                             cartindex === index ?{...item,quantity : item.quantity + 1} : item
                         )
+                        setCART(_CART)
                     })
 
                   }}>+</button>
