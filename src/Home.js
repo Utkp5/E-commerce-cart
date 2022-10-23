@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './components/Navbar/Navbar'
 import Slider from "./components/Slider/Slider"
 import Product from "./components/Products/Product"
+import Cart from './components/Cart/Cart'
 import { useState } from 'react'
 
 function Home() {
@@ -81,6 +82,7 @@ function Home() {
     <Navbar />
     <Slider />
     <Product Products={Products} addToCart={addToCart}/>
+    <Cart cart={cart}/>
     </div>
   )
 }
