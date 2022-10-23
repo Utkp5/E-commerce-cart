@@ -12,23 +12,30 @@ function Cart({ cart }) {
   return (
     <div>
       {
-        CART.map((cartItem,cartindex) => {
+        CART.map((cartItem , cartindex) => {
             return (
                 <div className="cartdiv">
                   <img src={cartItem.productsImg} alt="" className="cartimg"/>
                   <span className="cartinfo">{cartItem.productsInfo}</span>
                   <div id="incdecdiv">
-                  <button className="cartbtn">-</button>
+                  <button className="cartbtn" onClick={() => {
+
+                    const _CART = CART.map((item,index) => {
+                      return (
+                          cartindex === index ?{...item , quantity : item.quantity > 0  ? item.quantity - 1 : 1}  : item
+                          )
+                        })
+                        setCART(_CART)
+                  }}>-</button>
                   <span className="cartquan">{cartItem.quantity}</span>
                   <button className="cartbtn" onClick={() => {
 
                     const _CART = CART.map((item,index) => {
                         return (
-                            cartindex === index ?{...item,quantity : item.quantity + 1} : item
-                        )
-                        setCART(_CART)
-                    })
-
+                            cartindex === index ?{...item , quantity : item.quantity + 1} : item
+                            )
+                          })
+                          setCART(_CART)
                   }}>+</button>
                   </div>
                   <span className="cartprice">${cartItem.productsPrice * cartItem.quantity}</span>
