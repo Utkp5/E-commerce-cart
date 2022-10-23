@@ -1,4 +1,5 @@
 import React from "react";
+import "./Cart.css"
 
 function Cart({ cart }) {
   return (
@@ -6,9 +7,15 @@ function Cart({ cart }) {
       {
         cart.map((cartItem) => {
             return (
-                <div>
-                  <img src={cartItem.productsImg} alt="" />
-                  <span>{cartItem.productsInfo}</span>
+                <div className="cartdiv">
+                  <img src={cartItem.productsImg} alt="" className="cartimg"/>
+                  <span className="cartinfo">{cartItem.productsInfo}</span>
+                  <div id="incdecdiv">
+                  <button className="cartbtn">-</button>
+                  <span className="cartquan">{cartItem.quantity}</span>
+                  <button className="cartbtn">+</button>
+                  </div>
+                  <span className="cartprice">{cartItem.productsPrice}</span>
                 </div>
             );
       })

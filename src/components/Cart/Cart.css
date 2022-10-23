@@ -1,0 +1,35 @@
+.cartdiv
+{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+    justify-content: space-between;
+}
+.cartimg
+{
+    width: 100px;
+}
+.cartinfo
+{
+    font-size: x-large;
+    margin: 0 150px;
+    display: flex;
+}
+.cartquan
+{
+    font-size: medium;
+    margin: 0 15px;
+}
+.cartbtn
+{
+    padding: 4px 5px;
+}
+.cartprice
+{
+    font-size: x-large;
+    margin: 0 150px;
+}
+#incdecdiv
+{
+
+}

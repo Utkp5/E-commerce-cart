@@ -74,7 +74,7 @@ function Home() {
   const [cart,setcart] = useState([])
   console.log(cart);
   const addToCart = (data) =>{
-    setcart([...cart,data])
+    setcart([...cart,{...data, quantity : 1}])
   }
 
   return (
