@@ -22,7 +22,7 @@ function Cart({ cart }) {
 
                     const _CART = CART.map((item,index) => {
                       return (
-                          cartindex === index ?{...item , quantity : item.quantity > 0  ? item.quantity - 1 : 1}  : item
+                          cartindex === index ?{...item , quantity : item.quantity > 1  ? item.quantity - 1 : 1}  : item
                           )
                         })
                         setCART(_CART)
