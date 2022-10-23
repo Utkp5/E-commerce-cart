@@ -33,3 +33,19 @@
 {
 
 }
+.totalpay
+{
+    border-top: 2px solid;
+    font-size: xx-large;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.btnpay
+{
+    background: darkorange;
+    padding: 0px 40px;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+}

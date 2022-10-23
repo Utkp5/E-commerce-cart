@@ -15,8 +15,8 @@ function Home() {
       productsInfo: "IPHONE X",
       subproductInfo:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!",
-      productsPrice: "$196.00",
-      priceStrike: "$230.99",
+      productsPrice: "196.00",
+      priceStrike: "230.99",
     },
     {
         productsImg:
@@ -25,8 +25,8 @@ function Home() {
       productsInfo: "LAPTOP LINOVO",
       subproductInfo:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!",
-      productsPrice: "$126.00",
-      priceStrike: "$230.99",
+      productsPrice: "126.00",
+      priceStrike: "230.99",
     },
     {
         productsImg:
@@ -35,8 +35,8 @@ function Home() {
       productsInfo: "CAMERA CANON",
       subproductInfo:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!",
-      productsPrice: "$106.00",
-      priceStrike: "$230.99",
+      productsPrice: "106.00",
+      priceStrike: "230.99",
     },
     {
         productsImg:
@@ -45,8 +45,8 @@ function Home() {
       productsInfo: "HEADPHONES BOAT",
       subproductInfo:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!",
-      productsPrice: "$139.00",
-      priceStrike: "$230.99",
+      productsPrice: "139.00",
+      priceStrike: "230.99",
     },
     {
       productsImg:
@@ -55,8 +55,8 @@ function Home() {
       productsInfo: "IRON",
       subproductInfo:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!",
-        productsPrice: "$150.00",
-        priceStrike: "$230.99",
+        productsPrice: "150.00",
+        priceStrike: "230.99",
       },
     {
       productsImg:
@@ -65,8 +65,8 @@ function Home() {
       productsInfo: "WASHING MACHINE",
       subproductInfo:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!",
-      productsPrice: "$166.00",
-      priceStrike: "$230.99",
+      productsPrice: "166.00",
+      priceStrike: "230.99",
     },
   ]);
 

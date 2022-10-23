@@ -21,7 +21,7 @@ function Product({Products,addToCart}) {
               <p>{prdct.subproductInfo}</p>
               <div className="product-bottom-details">
                 <div className="product-price">
-                  <small>{prdct.priceStrike}</small>{prdct.productsPrice}
+                  <small>${prdct.priceStrike}</small>${prdct.productsPrice}
                 </div>
                 <div className="product-links">
                   <a href="">
