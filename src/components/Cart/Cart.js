@@ -1,11 +1,20 @@
-import React from 'react'
+import React from "react";
 
-function Cart({cart}) {
+function Cart({ cart }) {
   return (
     <div>
-
+      {
+        cart.map((cartItem) => {
+            return (
+                <div>
+                  <img src={cartItem.productsImg} alt="" />
+                  <span>{cartItem.productsInfo}</span>
+                </div>
+            );
+      })
+    }
     </div>
-  )
+  );
 }
 
-export default Cart
+export default Cart;
