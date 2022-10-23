@@ -1,52 +1,40 @@
-.cartdiv
-{
-    display: flex;
-    align-items: center;
-    margin: 20px 0px;
-    justify-content: space-between;
+.cartdiv {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+  justify-content: space-between;
 }
-.cartimg
-{
-    width: 100px;
+.cartimg {
+  width: 100px;
 }
-.cartinfo
-{
-    font-size: x-large;
-    margin: 0 150px;
-    display: flex;
+.cartinfo {
+  font-size: x-large;
+  margin: 0 150px;
+  display: flex;
 }
-.cartquan
-{
-    font-size: medium;
-    margin: 0 15px;
+.cartquan {
+  font-size: medium;
+  margin: 0 15px;
 }
-.cartbtn
-{
-    padding: 4px 5px;
+.cartbtn {
+  padding: 4px 5px;
 }
-.cartprice
-{
-    font-size: x-large;
-    margin: 0 150px;
+.cartprice {
+  font-size: x-large;
+  margin: 0 150px;
 }
-#incdecdiv
-{
-
+.totalpay {
+  border-top: 2px solid;
+  font-size: xx-large;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
 }
-.totalpay
-{
-    border-top: 2px solid;
-    font-size: xx-large;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
-}
-.btnpay
-{
-    background: darkorange;
-    padding: 0px 40px;
-    font-size: 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+.btnpay {
+  background: darkorange;
+  padding: 0px 40px;
+  font-size: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
