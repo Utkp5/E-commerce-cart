@@ -19,6 +19,7 @@ li
 {
     margin: 0px 30px;
     font-size: larger;
+    cursor: pointer;
 }
 a
 {

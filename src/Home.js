@@ -72,17 +72,27 @@ function Home() {
 
 
   const [cart,setcart] = useState([])
+  const [showcart,setshowcart] =useState(false)
+
   console.log(cart);
   const addToCart = (data) =>{
     setcart([...cart,{...data, quantity : 1}])
   }
 
+
+  const handleShow = (value) => {
+    setshowcart(value);
+  }
+
   return (
     <div>
-    <Navbar />
+    <Navbar count={cart.length} handleShow={handleShow}/>
     <Slider />
-    <Product Products={Products} addToCart={addToCart}/>
-    <Cart cart={cart}/>
+    {
+      showcart ?
+      <Cart cart={cart}/> :
+      <Product Products={Products} addToCart={addToCart}/> 
+    }
     </div>
   )
 }
