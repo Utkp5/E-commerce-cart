@@ -4,6 +4,7 @@ import Slider from "./components/Slider/Slider"
 import Product from "./components/Products/Product"
 import Cart from './components/Cart/Cart'
 import { useState } from 'react'
+import Slider1 from './components/Slider1/Slider1'
 
 function Home() {
 
@@ -93,6 +94,7 @@ function Home() {
       <Cart cart={cart}/> :
       <Product Products={Products} addToCart={addToCart}/> 
     }
+    <Slider1 />
     </div>
   )
 }

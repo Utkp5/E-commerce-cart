@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 
-export default class PauseOnHover extends Component {
+
+export default class Slider1 extends Component {
   render() {
     var settings = {
       dots: true,
       infinite: true,
-      slidesToShow: 4,
+      slidesToShow: 8,
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 2000,
@@ -30,6 +31,39 @@ export default class PauseOnHover extends Component {
           </div>
           <div>
             <h3>5</h3>
+          </div>
+          <div>
+            <h3>6</h3>
+          </div>
+          <div>
+            <h3>6</h3>
+          </div>
+          <div>
+            <h3>6</h3>
+          </div>
+          <div>
+            <h3>6</h3>
+          </div>
+          <div>
+            <h3>6</h3>
+          </div>
+          <div>
+            <h3>6</h3>
+          </div>
+          <div>
+            <h3>6</h3>
+          </div>
+          <div>
+            <h3>6</h3>
+          </div>
+          <div>
+            <h3>6</h3>
+          </div>
+          <div>
+            <h3>6</h3>
+          </div>
+          <div>
+            <h3>6</h3>
           </div>
           <div>
             <h3>6</h3>
